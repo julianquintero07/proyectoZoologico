@@ -18,7 +18,7 @@ public class ApiRest {
     @GetMapping(path = "/path")
     public String commandName() {
 //      return useCase.doAction();
-        return "Hello World";
+        return "HelloWorld";
     }
     @GetMapping(path = "/consultar/{id}")
     public Animal read(@PathVariable String id){ return crudAnimalUseCase.read(id);}
